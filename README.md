@@ -1,71 +1,60 @@
-# liteizen README
+# **Liteizen** ✨  
 
-This is the README for your extension "liteizen". After writing up a brief description, we recommend including the following sections.
+**Ultra-fast, lightweight and open-source Denizen extension for VSCode** – with **smart autocomplete, cross-script imports, addon support, and no bloat!**  
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
 
 ---
 
-## Following extension guidelines
+## **🔥 Features**  
+✅ **Blazing-fast parsing** – No web server, no delays, no lags.  
+✅ **Full Denizen syntax highlighting** – With **real-time error checking**.  
+✅ **Smart variable resolution** – Knows `- define var <player>` is a PlayerTag, not ElementTag.  
+✅ **Cross-script imports** – Auto-detects functions from other scripts.  
+✅ **Expanded tag database** – More built-in tags than the default extension.  
+✅ **Addon support** – Use `#-use <addon name>` and get **instant syntax highlighting** for any addon!  
+✅ **Local cache files** – Stores tags/commands in `.liteizen` files (e.g., `dDiscordBot.liteizen`).  
+✅ **Copy actual info** – Copy all tags/commands/events from original Denizen repo.  
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+---
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## **🚀 Installation**  
+1. **VSCode Marketplace**:  
+   ```bash
+   ext install Liteizen
+   ```  
+2. **Manual (from source)**:  
+   - Clone this repo  
+   - Run `npm install`  
+   - Open in VSCode, press `F5` to launch the extension in debug mode  
 
-## Working with Markdown
+---
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+## **📦 Addon Support (The Killer Feature!)**  
+Just add a **`#-use` directive** at the top of your script, and Liteizen **automatically loads all commands/events** from that addon!  
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+### **Example**:  
+```yml  
+#-use dDiscordBot  
 
-## For more information
+my_script:  
+  type: task  
+  script:  
+    - discordmessage id:my_bot channel:1234 "Hello world!"  # ← Now highlighted!  
+```  
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Liteizen **generates `.liteizen` files** (e.g., `dDiscordBot.liteizen`) to cache all tags, so it stays fast.  
 
-**Enjoy!**
+---
+
+**Want to add more tags?** Create Issues with description of new Denizen Addon!
+
+---
+
+## **📜 License**  
+MIT – Do whatever you want, but credit is appreciated!  
+
+---  
+
+**🚀 Ready to speed up your Denizen scripting? Install Liteizen now!**  
+
+<!-- *(Сделай скриншоты/гифки для демо, и README будет вообще огонь!)* 🔥 -->
